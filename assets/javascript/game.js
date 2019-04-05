@@ -1,26 +1,26 @@
 var blastoise = {
-    health: 120,
-    attack: 8,
-    base: 8,
-    counter: 20
+    health: 100,
+    attack: 9,
+    base: 9,
+    counter: 14
 }
 var charmeleon = {
-    health: 100,
-    attack: 5,
-    base: 5,
-    counter: 15
+    health: 80,
+    attack: 8,
+    base: 8,
+    counter: 8
 }
 var bulbasaur = {
-    health: 80,
-    attack: 3,
-    base: 3,
-    counter: 10
+    health: 70,
+    attack: 7,
+    base: 7,
+    counter: 7
 }
 var mewtwo = {
-    health: 150,
+    health: 120,
     attack: 10,
     base: 10,
-    counter: 25
+    counter: 12
 }
 var playerChoice = {
     char: "",
@@ -62,7 +62,6 @@ function gameStart() {
             div.append(txt);
             $('#enemies').append(div);
         }
-        
     }
     else if (playerChoice.char === charactersnam[1]) {
         var div = $('<div>')
@@ -344,7 +343,7 @@ $('body').on("click", ".enchar3", function () {
     })
     var attacking = false;
 $('body').on("click", ".attack", function () {
-    if(attacking === false){
+    if(attacking === false && computer.chosen === true){
         attacking = true;
     computer.health -= playerChoice.attack;
     playerChoice.attack += playerChoice.base;
@@ -366,7 +365,6 @@ $('body').on("click", ".attack", function () {
         var health = $('.health').text("Health: " + playerChoice.health);
         $('.health').append(health);
         attacking = false;
-    }
     }
     setTimeout(enattack,1000);
     if(computer.health <= 0){
@@ -445,4 +443,5 @@ $('body').on("click", ".attack", function () {
                 }
                 
             }
+        }
 })
