@@ -1,0 +1,142 @@
+body {
+background-image: url("../images/201800014075-2.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+display:block;
+margin-left:auto;
+margin-right:auto;
+background-position: center; 
+background-size: 715px;
+}
+.poke{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    height:105px;
+    width:105px;
+    border: 3px solid rgb(190, 190, 190);
+    flex-direction: column;
+    background-color: gold;
+    padding: 12px;
+    position: relative;
+    z-index: 0;
+    overflow:none;
+}
+.poke2{
+    display: block;
+    margin-right: 0;
+    height:105px;
+    width:105px;
+    border: 3px solid rgb(190, 190, 190);
+    flex-direction: column;
+    background-color: gold;
+    padding: 12px;
+    position: relative;
+    z-index: 0;
+    align-content: right;
+}
+.battleimg{
+    position: relative;
+    right: 15px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 175px;
+    width:175px;
+    margin-bottom: 0;
+}
+.enbattleimg{
+    position:relative;
+    left:20px;
+    height: 175px;
+    width:175px;
+    margin-bottom: 0;
+}
+.cardtext{
+    font-size:9px;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 13px;
+}
+.center{
+    text-align: center;
+
+}
+.work h3{
+    border-bottom: 0;
+    font-size:9px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    bottom: -19px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 11px;
+   
+}
+.work{
+    overflow: auto;
+    position: relative;
+    align-content: right;
+    margin: 20px 10px 25px;
+}
+.border{
+    border: 2px solid darkblue;
+}
+.work h2{
+    padding: 5px;
+}
+.logo{
+    height: 150px;
+    width:400px;
+    text-align: center;
+    align-content: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#attacks{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom:15px;
+}
+.attack{
+    position: relative;
+    left: 5px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    bottom: 57px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+    background-color: red;
+    padding-top:17px;
+    padding-bottom: 17px;
+}
+.attack:hover{
+    border: 2px solid black;
+    color: black;
+   
+}
+.health{
+    right: 40px;
+    color: white;
+    font-size: 28px;
+    position: relative;
+    bottom: 5px;
+}
+.enhealth{
+    left: 40px;
+    color: white;
+    font-size: 28px;
+    position: relative;
+    bottom: 5px;
+}
+.charcont{
+    height:100%;
+}
